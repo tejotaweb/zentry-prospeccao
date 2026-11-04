@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="G · Nome gigante (ref. qura): foto em cartão com o nome da empresa enorme por cima, título centralizado embaixo; como funciona em números grandes 01 02 03">
+<meta name="fonte" content="Plus Jakarta Sans">
+<meta name="ordem" content="sobre,servicos:cartoes,passos_grandes,numeros,galeria,situacoes,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+h1,h2,h3{font-weight:500;letter-spacing:-.035em}
+.menu{margin-bottom:-84px}
+.menu .g{height:84px;padding-top:12px}
+.menu:not(.rolou){color:#fff}
+.menu:not(.rolou) nav{background:transparent;border:0}
+.menu:not(.rolou) nav a.ativo{background:rgba(255,255,255,.18)}
+.menu:not(.rolou) .menu-celular{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff}
+/* ---- abertura G ---- */
+.heroG{position:relative;margin:10px clamp(8px,1vw,14px) 0;border-radius:32px;overflow:hidden;min-height:min(96vh,920px);color:#fff;display:flex;background:var(--cor-forte)}
+.heroG>img{position:absolute;inset:0;width:100%;height:100%}
+.heroG::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,color-mix(in srgb,var(--cor-forte) 55%,transparent),transparent 40%,transparent 52%,color-mix(in srgb,var(--cor-forte) 88%,transparent));pointer-events:none}
+.heroG .marca-g{position:absolute;z-index:1;left:0;right:0;top:clamp(90px,11vw,150px);text-align:center;font-weight:600;line-height:.82;letter-spacing:-.06em;font-size:{{marca_tam}};color:#fff;mix-blend-mode:soft-light;opacity:.95;white-space:nowrap;pointer-events:none}
+.heroG .marca-g.solida{mix-blend-mode:normal;opacity:.92;text-shadow:0 10px 60px rgba(0,0,0,.18)}
+.heroG .g{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;padding-top:140px;padding-bottom:clamp(36px,5vw,64px);gap:20px}
+.heroG h1{font-size:clamp(34px,3.8vw,58px);line-height:1.05;max-width:18ch}
+.heroG h1 .l2{display:block;color:var(--claro)}
+.heroG .sub{color:rgba(255,255,255,.84);max-width:56ch}
+.heroG .botoes{justify-content:center}
+.heroG .chips{justify-content:center;margin-top:6px}
+@media (max-width:620px){.heroG::after{background:linear-gradient(180deg,color-mix(in srgb,var(--cor-forte) 55%,transparent),color-mix(in srgb,var(--cor-forte) 45%,transparent) 35%,color-mix(in srgb,var(--cor-forte) 92%,transparent))}.heroG{border-radius:24px;min-height:auto}.heroG .g{padding-top:200px}.heroG .chips .chip:nth-child(n+4){display:none}}
+</style>
+</head>
+<body>
+{{aviso}}
+{{menu}}
+<main id="inicio">
+<section class="heroG">
+  <img src="{{foto_ambiente:1}}" alt="Foto da {{nome}}">
+  <span class="marca-g solida" aria-hidden="true">{{marca}}</span>
+  <div class="g">
+    <h1 data-palavras>{{titulo1}} <span class="l2">{{titulo2}}</span></h1>
+    <p class="sub">{{subtitulo}}</p>
+    <div class="botoes">{{botao_claro}}{{botao2_branco}}</div>
+    <div class="chips">{{chips_vidro}}</div>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>

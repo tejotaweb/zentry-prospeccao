@@ -1,0 +1,10 @@
+# dados do painel: empresas, prévias, contas, senhas e chaves (nunca vão para o Git)
+dados/
+# instalações locais
+.venv/
+node_modules/
+previa/bin/
+__pycache__/
+*.pyc
+.DS_Store
+painel/foto.jpg

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="H · Bloco de cor (ref. Slimor): foto em cartão com véu na cor da marca, título branco embaixo à esquerda; faixa cheia na cor com a nota do Google gigante">
+<meta name="fonte" content="Instrument Sans">
+<meta name="ordem" content="sobre:foto,servicos:carrossel,faixa_cor,passos,galeria,equipe,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+.menu{margin-bottom:-86px}
+.menu .g{height:86px;padding-top:14px}
+.menu:not(.rolou){color:#fff}
+.menu:not(.rolou) nav{background:rgba(255,255,255,.14);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.22)}
+.menu:not(.rolou) nav a.ativo{background:#fff;color:var(--tinta)}
+.menu:not(.rolou) .menu-celular{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff}
+/* ---- abertura H ---- */
+.heroH{position:relative;margin:10px clamp(8px,1vw,14px) 0;border-radius:30px;overflow:hidden;min-height:min(92vh,880px);color:#fff;display:flex;background:var(--cor)}
+.heroH>img{position:absolute;inset:0;width:100%;height:100%}
+.heroH::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(200deg,color-mix(in srgb,var(--cor) 60%,transparent),transparent 45%),linear-gradient(0deg,rgba(0,0,0,.5),transparent 55%);mix-blend-mode:normal}
+.heroH .g{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);align-items:end;gap:clamp(24px,5vw,80px);padding-top:140px;padding-bottom:clamp(32px,4vw,56px)}
+.heroH .esq{display:flex;flex-direction:column;gap:18px}
+.heroH .tag{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:99px;background:rgba(255,255,255,.18);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13px}
+.heroH .tag i{width:7px;height:7px;border-radius:50%;background:#fff}
+.heroH h1{font-size:clamp(46px,6vw,96px);line-height:.98;letter-spacing:-.05em}
+.heroH h1 .l2{display:block;opacity:.8}
+.heroH .dir{display:flex;flex-direction:column;gap:18px;padding:22px;border-radius:22px;background:color-mix(in srgb,var(--cor-forte) 45%,transparent);border:1px solid rgba(255,255,255,.18);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.heroH .sub{color:rgba(255,255,255,.88);font-size:15.5px}
+@media (max-width:900px){.heroH .g{grid-template-columns:1fr}.heroH{min-height:auto}.heroH .g{padding-top:160px}}
+@media (max-width:620px){.heroH{border-radius:22px}}
+</style>
+</head>
+<body>
+{{aviso}}
+{{menu}}
+<main id="inicio">
+<section class="heroH">
+  <img src="{{foto_ambiente:1}}" alt="Foto da {{nome}}">
+  <div class="g">
+    <div class="esq">
+      <span class="tag"><i></i>{{servico1}}</span>
+      <h1 data-palavras>{{titulo1}} <span class="l2">{{titulo2}}</span></h1>
+    </div>
+    <div class="dir">
+      {{prova_clara}}
+      <p class="sub">{{subtitulo}}</p>
+      <div class="botoes">{{botao_claro}}</div>
+    </div>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>

@@ -1,0 +1,554 @@
+[
+ {
+  "codigo": "WA-01",
+  "titulo": "Pergunta rápida: por onde chega cliente novo",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi, tudo bem? Falo com quem cuida do [NEGOCIO]?\nPergunta rápida: hoje o cliente novo chega mais por indicação ou pela internet?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-02",
+  "titulo": "Pergunta rápida: o teste do google",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Opa, boa tarde! Sou o [SEU NOME], aqui de [CIDADE].\nUma curiosidade sobre o [NEGOCIO]: se um cliente te procurar no Google agora, ele acha vocês fácil ou acha o concorrente primeiro?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-03",
+  "titulo": "Pergunta rápida: achando o decisor",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi, tudo certo? Vi o [NEGOCIO] no [ONDE ACHOU] e fiquei com uma dúvida.\nQuem cuida da parte de [AREA] aí? É você mesmo?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-04",
+  "titulo": "Observação específica: \"reparei uma coisa\"",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], tudo bem? Dei uma olhada no [NEGOCIO] hoje e reparei que [OBSERVACAO].\nIsso costuma fazer o cliente [CONSEQUENCIA]. Vocês já tinham percebido?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-05",
+  "titulo": "Observação específica: a jornada do cliente que quase desistiu",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi, boa tarde! Fui procurar o [NEGOCIO] no Google agora há pouco e quase desisti: [PROBLEMA QUE TRAVOU].\nCheguei a achar que tinham fechado. Vocês sabiam que tá assim?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-06",
+  "titulo": "Observação específica: elogio verdadeiro + gap",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME]! O trabalho de vocês com [PONTO FORTE] é muito bom, dá pra ver o capricho.\nJustamente por isso me chamou atenção [GAP]. Tem um motivo, ou é falta de tempo mesmo?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-07",
+  "titulo": "Pedido de permissão: o áudio de 30 segundos",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], tudo bem? Sou o [SEU NOME], trabalho com [AREA EM 3 PALAVRAS] aqui em [CIDADE].\nOlhei o [NEGOCIO] e anotei 2 coisas que podem estar custando cliente pra vocês. Posso te mandar um áudio de 30 segundos explicando?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-08",
+  "titulo": "Pedido de permissão: a ideia rápida",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Opa [NOME], tudo certo? Tive uma ideia pro [NEGOCIO] vendo como vocês [O QUE VOCE VIU].\nÉ rápida de explicar e não custa nada ouvir. Quer que eu mande aqui mesmo?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-09",
+  "titulo": "Amostra-presente: \"fiz uma coisa pra vocês\"",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], tudo bem? Gostei do trabalho de vocês e acabei fazendo uma coisa pro [NEGOCIO]: [O QUE FEZ].\nÉ presente, sem pegadinha nenhuma. Posso mandar o link pra você abrir aqui no celular?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-10",
+  "titulo": "Amostra-presente: a prévia que dá orgulho",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], boa noite! Montei uma prévia de como o [NEGOCIO] poderia aparecer pra quem procura [SERVICO] em [CIDADE].\nFicou bonita demais pra morrer aqui no meu computador. Te mando o link pra você ver?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "WA-11",
+  "titulo": "Conhecido de conhecido: a ponte quente",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], tudo bem? O [PESSOA EM COMUM] me passou seu contato, falou que é você quem resolve as coisas aí no [NEGOCIO].\nFiz um trabalho pra ele de [ENTREGA] e ele achou que podia te interessar. Posso te contar em 1 minuto?"
+  ],
+  "regra": "ok",
+  "nota": "Só com indicação de verdade."
+ },
+ {
+  "codigo": "WA-12",
+  "titulo": "Conhecido de conhecido: a indicação espontânea",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Opa [NOME], quem me indicou você foi o [PESSOA EM COMUM].\nMostrei pra ele um trabalho que fiz de [ENTREGA] e ele na hora falou: \"isso aí é a cara do [NEGOCIO]\". Fiquei curioso pra entender por quê. Faz sentido pra vocês agora?"
+  ],
+  "regra": "ok",
+  "nota": "Só com indicação de verdade."
+ },
+ {
+  "codigo": "WA-13",
+  "titulo": "Ponte pós-visita: \"passei aí hoje cedo\"",
+  "etapa": "Primeira mensagem (WhatsApp)",
+  "textos": [
+   "Oi [NOME], aqui é o [SEU NOME], passei aí no [NEGOCIO] hoje cedo e falei rapidinho com [QUEM ATENDEU].\nComo você não tava, te procuro por aqui: reparei [OBSERVACAO] e queria te mostrar uma coisa rápida. Prefere que eu ligue ou mando áudio?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "FU-01",
+  "titulo": "Bump suave de 48h",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME], tudo bem? Só subindo minha mensagem aqui pra ela não se perder.\nAquela pergunta sobre [ASSUNTO] segue de pé. E se não fizer sentido pra vocês, me diz um \"não rolou\" que eu não incomodo mais. Combinado?"
+  ],
+  "regra": "ok",
+  "nota": "Conta como um dos 2 retornos."
+ },
+ {
+  "codigo": "FU-02",
+  "titulo": "Novo ângulo com dado do nicho",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME]! Lembrei do [NEGOCIO] hoje por um motivo: quase todo [TIPO DE NEGOCIO] que eu visito perde cliente por [PROBLEMA COMUM DO NICHO] sem nem perceber.\nOlhei o de vocês de novo e acho que dá pra resolver rápido. Quer que eu te fale o que eu vi?"
+  ],
+  "regra": "ok",
+  "nota": "Conta como um dos 2 retornos. Use dado real e conferido do nicho."
+ },
+ {
+  "codigo": "FU-03",
+  "titulo": "Prova social local",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME], tudo certo? Semana passada entreguei [ENTREGA] pra um [NEGOCIO PARECIDO] aqui de [CIDADE] e o dono curtiu demais o resultado.\nNa hora pensei em vocês. Posso te mandar o link pra ver como ficou?"
+  ],
+  "regra": "ajustar",
+  "nota": "Só com case real e conferido. Conta como um dos 2 retornos."
+ },
+ {
+  "codigo": "FU-04",
+  "titulo": "Confirmação de 24h (pós-áudio ou pós-material)",
+  "etapa": "Retorno",
+  "textos": [
+   "Opa [NOME], ontem te mandei [O QUE MANDOU] e imagino que tenha passado batido no corre do dia.\nFica o resumo em uma linha: [RESUMO EM 1 FRASE]. Se quiser dar uma olhada, tô por aqui."
+  ],
+  "regra": "ok",
+  "nota": "Depois de mandar áudio ou prévia."
+ },
+ {
+  "codigo": "FU-05",
+  "titulo": "A última mensagem (breakup digno)",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME], última mensagem minha, prometo.\nEntendi que agora não é o momento pro [ASSUNTO], e tá tudo certo. Vou parar de te escrever pra não virar incômodo. Se um dia isso subir na sua lista, meu contato é este aqui mesmo. Sucesso pra vocês!"
+  ],
+  "regra": "ok",
+  "nota": "Use como o 2º e último retorno."
+ },
+ {
+  "codigo": "FU-06",
+  "titulo": "Reabertura de conversa morta (30 dias)",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME], tudo bem? A gente se falou mês passado sobre [ASSUNTO] e não rolou na época, normal.\nTe chamo de novo porque [MOTIVO NOVO REAL]. Mudou alguma coisa aí do seu lado também?"
+  ],
+  "regra": "ok",
+  "nota": "Para retomar depois de 30 dias, com motivo novo real."
+ },
+ {
+  "codigo": "FU-07",
+  "titulo": "Pós-\"vou pensar\"",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME]! Você falou que ia pensar sobre [ASSUNTO], então tô só cumprindo minha parte e voltando.\nMe responde com sinceridade: ficou alguma dúvida que eu posso esclarecer, ou o momento que não é bom mesmo? Qualquer uma das duas respostas me ajuda."
+  ],
+  "regra": "ok",
+  "nota": "Depois de um vou pensar."
+ },
+ {
+  "codigo": "FU-08",
+  "titulo": "Pós-orçamento sem resposta",
+  "etapa": "Retorno",
+  "textos": [
+   "Oi [NOME], tudo bem? Te passei o valor do [PROJETO] e fiquei sem seu retorno.\nSem problema nenhum se decidiu não seguir, só me avisa que eu encerro por aqui. Agora, se travou em algum ponto específico, me conta qual: quase sempre dá pra ajustar o caminho."
+  ],
+  "regra": "ok",
+  "nota": "Depois de mandar orçamento."
+ },
+ {
+  "codigo": "GK-01",
+  "titulo": "O recado que a secretária consegue encaminhar",
+  "etapa": "Secretária ou recepção",
+  "textos": [
+   "Oi, boa tarde! Tudo bem? Tenho um assunto rápido pro [NOME DO DONO ou responsável pelo [NEGOCIO]].\nPode passar pra ele este recado, do jeitinho que está aqui: \"É sobre [ASSUNTO CURTO E ESPECIFICO]\". Ele batendo o olho já entende. Obrigado!"
+  ],
+  "regra": "ok",
+  "nota": "Para quando quem responde é a recepção. Mande só com o seu sim."
+ },
+ {
+  "codigo": "GK-02",
+  "titulo": "Pedido do caminho com razão legítima",
+  "etapa": "Secretária ou recepção",
+  "textos": [
+   "Oi, tudo bem? Preciso falar com quem decide sobre [AREA] do [NEGOCIO].\nÉ um assunto que mexe com a imagem de vocês na internet, e prefiro tratar direto com o responsável pra não virar telefone sem fio. Ele atende por este número, ou tem um contato melhor?"
+  ],
+  "regra": "ok",
+  "nota": "Para quando quem responde é a recepção. Mande só com o seu sim."
+ },
+ {
+  "codigo": "GK-03",
+  "titulo": "Assunto que só o dono resolve",
+  "etapa": "Secretária ou recepção",
+  "textos": [
+   "Oi, boa tarde! O [NOME DO DONO] está por aí?\nÉ sobre [ASSUNTO QUE SO O DONO RESOLVE]. Coisa de 2 minutos com ele, prometo que não tomo mais que isso."
+  ],
+  "regra": "ok",
+  "nota": "Para quando quem responde é a recepção. Mande só com o seu sim."
+ },
+ {
+  "codigo": "GK-04",
+  "titulo": "Contorno do \"manda pra mim que eu encaminho\"",
+  "etapa": "Secretária ou recepção",
+  "textos": [
+   "Consigo sim! Só que por mensagem sempre se perde metade da história, e aí fica ruim até pra ele avaliar.\nFaz melhor: me passa o e-mail dele (ou um contato direto), que eu mando completo e organizado. Chegando lá, ele decide em 1 minuto se faz sentido."
+  ],
+  "regra": "ok",
+  "nota": "Para quando quem responde é a recepção. Mande só com o seu sim."
+ },
+ {
+  "codigo": "GK-05",
+  "titulo": "Número respondido por bot ou recepção geral",
+  "etapa": "Secretária ou recepção",
+  "textos": [
+   "Oi! Já vi que este é o canal de atendimento, então vou ser direto: não sou cliente, tenho um assunto comercial rápido pro dono do [NEGOCIO].\nQual o melhor caminho pra chegar até ele: e-mail, outro número, ou eu passo aí pessoalmente?"
+  ],
+  "regra": "ok",
+  "nota": "Para quando quem responde é a recepção. Mande só com o seu sim."
+ },
+ {
+  "codigo": "DM-01",
+  "titulo": "Dm fria com elogio específico e verificável",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME]! Caí no perfil de vocês pelo [COMO ACHOU] e fiquei um tempão olhando [POST OU TRABALHO ESPECIFICO].\nTrabalho com [AREA EM 3 PALAVRAS] e reparei uma coisa que pode estar segurando o [NEGOCIO]. Posso te falar o que é?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-02",
+  "titulo": "Comentário público que vira dm",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "[Comentário no post]: Que trabalho bonito. Vocês são daqui de [CIDADE] mesmo?\n\n[DM, depois que responderem o comentário]: Opa, vim pro direct pra não poluir o post de vocês. O elogio era sincero, mas eu tinha uma pergunta de trabalho também: quem cuida do Instagram e do site do [NEGOCIO]?"
+  ],
+  "regra": "ajustar",
+  "nota": "Só a primeira parte, o comentário, combina com a regra. Comentar precisa do seu sim."
+ },
+ {
+  "codigo": "DM-03",
+  "titulo": "Resposta a story do negócio",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "[Respondendo ao story]: Boa! Esse [O QUE APARECEU NO STORY] ficou top demais.\nAproveitando que te achei por aqui: o cliente de vocês tem onde ver tudo isso fora do Instagram? Procurei um site e não achei."
+  ],
+  "regra": "ajustar",
+  "nota": "Use só a primeira linha, a reação ao story. A segunda fala de site e fica para depois da resposta."
+ },
+ {
+  "codigo": "DM-04",
+  "titulo": "Dm com amostra visual",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME], tudo bem? Fiz um teste rápido de como o [NEGOCIO] apareceria pra quem procura [SERVICO] em [CIDADE], e ficou muito bom.\nTá aqui do meu lado quase implorando pra ser visto. Posso mandar o print?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-05",
+  "titulo": "Nicho sem site: a pergunta honesta",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME]! Achei vocês aqui no Instagram, mas fui procurar o site do [NEGOCIO] e não achei.\nÉ isso mesmo ou tá escondido? Pergunto porque em [TIPO DE NEGOCIO] tem muito cliente que só fecha depois de ver um site com as informações no lugar."
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-06",
+  "titulo": "Perfil parado há meses",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME], tudo bem? Vi que o último post do [NEGOCIO] foi lá de [MES DO ULTIMO POST], e o trabalho de vocês é bom demais pra ficar sumido assim.\nAposto que o problema é tempo, não vontade. Acertei?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-07",
+  "titulo": "Pedido de indicação do decisor",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi! Vi que esse é o canal oficial do [NEGOCIO], então vou direto: tenho um assunto comercial rápido, coisa de dono mesmo.\nQuem é a melhor pessoa pra falar sobre o site e a presença de vocês na internet? Se puder me apontar o caminho, agradeço demais."
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-08",
+  "titulo": "Primeira abordagem quando o whatsapp não é opção",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME], tudo bem? Hoje em dia resolvo quase tudo por aqui mesmo, então vou direto ao ponto: reparei [OBSERVACAO] no [NEGOCIO] e tenho uma sugestão simples que pode virar cliente novo pra vocês.\nPrefere que eu explique por áudio aqui ou numa ligação rápida?"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "DM-09",
+  "titulo": "Ponte conhecido de conhecido, versão dm",
+  "etapa": "Primeira mensagem (Instagram)",
+  "textos": [
+   "Oi [NOME]! Vim pelo perfil do [PESSOA EM COMUM], a gente se conhece de [CONTEXTO].\nEle viu um trabalho que fiz de [ENTREGA] e falou na hora: \"mostra isso pro [NOME]\". Tô obedecendo. Posso te mandar aqui mesmo?"
+  ],
+  "regra": "ok",
+  "nota": "Só com indicação de verdade."
+ },
+ {
+  "codigo": "EM-01",
+  "titulo": "O e-mail pós-gatekeeper",
+  "etapa": "E-mail",
+  "textos": [
+   "Olá, [NOME], tudo bem?\n\nFalei hoje com a recepção do [NEGOCIO] e me passaram este e-mail como o melhor caminho até você.\n\nVou direto ao ponto: reparei [OBSERVACAO] e isso costuma custar cliente todo mês, daquele jeito que não aparece em relatório nenhum.\n\nConsigo te mostrar o que eu vi em 10 minutos, por telefone ou WhatsApp. Me passa seu contato direto?\n\n[SEU NOME]\n[SEU WHATSAPP]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "EM-02",
+  "titulo": "Observação sobre o negócio",
+  "etapa": "E-mail",
+  "textos": [
+   "Olá, [NOME], tudo bem?\n\nProcurei [SERVICO] em [CIDADE] esta semana e o [NEGOCIO] apareceu. Só que reparei uma coisa: [OBSERVACAO].\n\nNa prática, isso empurra o cliente pro concorrente que responde mais fácil.\n\nTrabalho exatamente com isso para negócios daqui. Vale uma conversa de 10 minutos pra eu te mostrar o que vi? Se preferir, me chama no WhatsApp: [SEU WHATSAPP].\n\n[SEU NOME]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "EM-03",
+  "titulo": "Dor do nicho + pergunta direta",
+  "etapa": "E-mail",
+  "textos": [
+   "Olá, [NOME], tudo bem?\n\nUma pergunta direta: quantos clientes chamam o [NEGOCIO] fora do horário e desistem antes da resposta?\n\nNa maioria dos [TIPO DE NEGOCIO] que eu visito, é aí que mora o cliente perdido do mês. E quase sempre se resolve com uma mudança simples, sem contratar ninguém.\n\nSe fizer sentido, te mostro num papo de 10 minutos. Pode ser pelo WhatsApp? O meu é [SEU WHATSAPP].\n\n[SEU NOME]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "EM-04",
+  "titulo": "Antes e depois com case real",
+  "etapa": "E-mail",
+  "textos": [
+   "Olá, [NOME], tudo bem?\n\nAcabei de entregar um trabalho pra um [TIPO DE NEGOCIO] aqui de [CIDADE]: [ANTES] virou [DEPOIS].\n\nO dono me contou onde a diferença apareceu primeiro: [ONDE APARECEU].\n\nO [NEGOCIO] me parece estar numa situação parecida com a de antes. Posso te mandar o link do resultado pra você julgar com os próprios olhos?\n\n[SEU NOME]\n[SEU WHATSAPP]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "EM-05",
+  "titulo": "Ultra-curto pro dono ocupado",
+  "etapa": "E-mail",
+  "textos": [
+   "[NOME], vou ser breve porque imagino seu dia.\n\nAjudo [TIPO DE NEGOCIO] de [CIDADE] a não perder cliente por [PROBLEMA N1 DO NICHO].\n\nVale 10 minutos no WhatsApp esta semana? Se não fizer sentido, um \"não\" curto já me ajuda demais.\n\n[SEU NOME]\n[SEU WHATSAPP]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "EM-06",
+  "titulo": "Mini-sequência de 3 toques (serviços profissionais)",
+  "etapa": "E-mail",
+  "textos": [
+   "Olá, [NOME], tudo bem?\n\nPesquisei [ESPECIALIDADE] em [CIDADE] e notei uma oportunidade na presença do [NEGOCIO]: [OBSERVACAO].\n\nQuem procura [ESPECIALIDADE] compara 3 ou 4 opções em minutos, e decide pela que passa mais confiança online.\n\nFaz sentido uma conversa de 10 minutos sobre isso? Respondo por aqui ou no WhatsApp: [SEU WHATSAPP].\n\n[SEU NOME]",
+   "Olá, [NOME]. Sem pedido nenhum neste e-mail, só uma observação útil.\n\nOlhando os [ESPECIALIDADE] mais procurados de [CIDADE], os primeiros têm em comum uma coisa simples: [PADRAO OBSERVADO].\n\nÉ um detalhe, e detalhe assim se resolve em dias, não em meses.\n\nSe quiser conversar sobre o caso de vocês, sigo por aqui.\n\n[SEU NOME]",
+   "Olá, [NOME]. Último e-mail meu sobre isso, prometo.\n\nSe o assunto não é prioridade agora, entendo perfeitamente e paro por aqui.\n\nSe em algum momento a presença do [NEGOCIO] subir na lista, este e-mail e meu WhatsApp seguem valendo: [SEU WHATSAPP].\n\nSucesso pra vocês!\n\n[SEU NOME]"
+  ],
+  "regra": "ajustar",
+  "nota": "E-mail frio fala de serviço logo no primeiro contato. Use só se decidir abrir esse canal."
+ },
+ {
+  "codigo": "OBJ-01",
+  "titulo": "\"manda por texto\" / \"passa o preço por mensagem\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Consigo sim! Só que antes preciso te fazer 2 perguntas rápidas, senão corro o risco de te passar um número errado, pra cima ou pra baixo.\nMe dá 10 minutos numa ligação hoje ou amanhã? Aí te passo o valor certo, sem chute. Qual horário fica bom?"
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-02",
+  "titulo": "\"tá caro\" (antes mesmo da conversa)",
+  "etapa": "Objeções",
+  "textos": [
+   "Entendo, e olha, não vou discutir com seu bolso. Só te convido a fazer uma conta comigo: quanto custa por mês continuar [PROBLEMA]?\nSe essa conta der menos que o projeto, você tá certo em não fazer, e eu mesmo te digo isso. Topa fazer essa conta comigo? É coisa de 10 minutos."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-03",
+  "titulo": "\"já tenho site\" / \"já tenho quem faça\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Perfeito, então o mais difícil você já resolveu, que é levar essa parte a sério.\nMe responde só uma coisa, de curiosidade: ele tá te trazendo cliente novo, ou tá só no ar? Se tiver trazendo, esquece que eu falei algo. Se tiver só no ar, aí vale 10 minutos comigo."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-04",
+  "titulo": "\"isso aí é feito com ia?\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Uso tecnologia no processo, sim. Igual dentista bom usa equipamento bom: pra entregar melhor e mais rápido.\nMas o que você recebe no final não é ferramenta, é [RESULTADO]. Posso te mandar um trabalho pronto pra você julgar pelo que ele entrega, e não pelo que eu usei pra fazer?"
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-05",
+  "titulo": "\"não tenho interesse\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Tranquilo, [NOME], e obrigado por responder, a maioria nem isso faz.\nSó me tira uma dúvida antes de eu sair da sua frente: é o assunto que não interessa, ou o momento que tá corrido? Se for o momento, te procuro mais pra frente. Se for o assunto, não te incomodo mais."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-06",
+  "titulo": "\"me chama depois\" / \"mês que vem\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Fechado, e vou te chamar mesmo, tá combinado.\nSó me ajuda numa coisa pra eu não voltar de mão vazia: o que muda de agora até lá? Assim eu volto com algo útil pro seu momento, e não só com um \"oi, lembra de mim?\"."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-07",
+  "titulo": "\"o que exatamente você faz?\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Resumo honesto: eu faço o cliente que já procura [SERVICO] em [CIDADE] achar e escolher o seu negócio, em vez do concorrente.\nNa prática isso pode ser um site, uma página de pedidos, o Google arrumado, depende do caso. Por isso te devolvo a pergunta: hoje, cliente novo chega até vocês por onde?"
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-08",
+  "titulo": "Vácuo depois que pediu o preço",
+  "etapa": "Objeções",
+  "textos": [
+   "Oi [NOME], tudo bem? Te passei o valor e você sumiu. Na minha experiência isso é uma de duas coisas: ou assustou, ou a vida atropelou.\nSe assustou, me fala sem cerimônia: a gente olha o escopo junto e vê o que faz sentido pro seu momento. Se foi correria, tô por aqui quando respirar."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "OBJ-09",
+  "titulo": "\"vou fazer eu mesmo com ia\" / \"tem ferramenta que faz de graça\"",
+  "etapa": "Objeções",
+  "textos": [
+   "Dá pra fazer, não vou te enganar. A ferramenta hoje é a parte fácil.\nO que eu entrego é o resto: saber o que escrever pra virar cliente, o que o Google exige, o acabamento que passa confiança, e principalmente as suas horas de volta. Se quiser tentar sozinho, tenta mesmo. E se travar em qualquer ponto, me chama, que aí você já vai saber exatamente o que tá comprando de mim."
+  ],
+  "regra": "ok",
+  "nota": "Use depois que a pessoa responder."
+ },
+ {
+  "codigo": "AU-01",
+  "titulo": "Primeira abordagem: curiosidade + presente",
+  "etapa": "Áudio",
+  "textos": [
+   "Oi [NOME], tudo bem? Ó, eu sei que mensagem de número desconhecido é chato, então vou ser rápido, prometido.\nEu passei essa semana pelo [NEGOCIO], e reparei uma coisa: [OBSERVACAO, em uma frase].\nEu trabalho com isso, e acabei fazendo uma coisinha pra vocês. De presente mesmo, sem compromisso nenhum.\nSe você quiser dar uma olhada, me responde aqui com um \"quero ver\" que eu te mando o link.\nValeu, [NOME], abraço!"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "AU-02",
+  "titulo": "Pós-vácuo: o áudio que humaniza o follow-up",
+  "etapa": "Áudio",
+  "textos": [
+   "Oi [NOME], tudo bom? Resolvi mandar um áudio pra você ver que do outro lado tem gente, não robô.\nTe mandei umas mensagens sobre [ASSUNTO], e imagino que sua rotina seja corrida, sério, sem cobrança nenhuma.\nSó que eu continuo achando que aquilo que eu vi pode tá te custando cliente. E aí fica mal comigo mesmo não insistir pelo menos mais uma vez.\nQuando você tiver um minutinho, me dá um retorno, nem que seja um \"não, valeu\". Fechou? Abraço!"
+  ],
+  "regra": "ok",
+  "nota": "Áudio só depois de um pode mandar."
+ },
+ {
+  "codigo": "AU-03",
+  "titulo": "Indicação: a ponte falada",
+  "etapa": "Áudio",
+  "textos": [
+   "Oi [NOME], tudo bem? Aqui é o [SEU NOME], quem me passou seu contato foi o [PESSOA EM COMUM].\nEu fiz um trabalho pra ele, de [ENTREGA], e ele gostou tanto que falou na hora: \"mostra isso pro [NOME], é a cara do negócio dele\".\nAí tô aqui, obedecendo o homem.\nSe você tiver dois minutinhos essa semana, eu te mostro rapidinho, do jeito que você preferir: por aqui, ligação, ou eu passo aí.\nQualquer coisa fala com o [PESSOA EM COMUM] de mim, viu? Abraço!"
+  ],
+  "regra": "ok",
+  "nota": "Áudio só depois de um pode mandar."
+ },
+ {
+  "codigo": "AU-04",
+  "titulo": "Pro dono ocupado: 20 segundos e fora",
+  "etapa": "Áudio",
+  "textos": [
+   "[NOME], 20 segundos, cronometra aí.\nEu ajudo [TIPO DE NEGOCIO] aqui de [CIDADE] a não perder cliente por [PROBLEMA N1, meia frase].\nOlhei o seu e achei exatamente isso.\nMe dá 10 minutos essa semana e eu te mostro. Se não valer os 10 minutos, o café da próxima vez é por minha conta. Abraço!"
+  ],
+  "regra": "fora",
+  "nota": "Fora da sua regra de 28/10: a primeira mensagem não se apresenta nem fala de site."
+ },
+ {
+  "codigo": "AU-05",
+  "titulo": "Reabertura de conversa morta",
+  "etapa": "Áudio",
+  "textos": [
+   "Oi [NOME], tudo bem? Não sei se você lembra de mim, a gente conversou mês passado sobre [ASSUNTO].\nNa época não rolou, tranquilo, tudo certo.\nSó que aconteceu uma coisa e eu lembrei de você na hora: [MOTIVO NOVO REAL, uma frase].\nAí fiquei com isso na cabeça e falei: \"vou chamar de novo, o máximo que acontece é um não\".\nSe fizer sentido agora, me responde por aqui. Se não, tá tudo bem também. Abraço, [NOME]!"
+  ],
+  "regra": "ok",
+  "nota": "Áudio só depois de um pode mandar."
+ }
+]

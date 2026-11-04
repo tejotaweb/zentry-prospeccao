@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="F · Bem-estar (ref. wellness verde): foto cheia de ponta a ponta, título grande e leve embaixo à esquerda, apoio e botão à direita, página em tom claro da marca e bloco escuro na cor forte">
+<meta name="fonte" content="Inter Tight">
+<meta name="ordem" content="sobre,lista_foto,destaque_escuro,situacoes,galeria,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+:root{--fundo:color-mix(in srgb,var(--claro) 45%,#fff)}
+body{background:var(--fundo)}
+h1,h2,h3{font-weight:400;letter-spacing:-.04em}
+.secao.fundo2{background:color-mix(in srgb,var(--medio) 45%,#fff)}
+/* menu por cima da foto */
+.menu{margin-bottom:-88px}
+.menu .g{height:88px}
+.menu:not(.rolou){color:#fff}
+.menu:not(.rolou) nav{background:rgba(255,255,255,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.24)}
+.menu:not(.rolou) nav a.ativo{background:#fff;color:var(--tinta)}
+.menu:not(.rolou) .menu-celular{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);color:#fff}
+/* ---- abertura F ---- */
+.heroF{position:relative;min-height:min(100vh,940px);color:#fff;display:flex;overflow:hidden;background:var(--cor-forte)}
+.heroF>img{position:absolute;inset:0;width:100%;height:100%;transform:scale(1.06);animation:respira 14s ease-out forwards}
+@keyframes respira{to{transform:scale(1)}}
+.heroF::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.38),transparent 30%,transparent 45%,color-mix(in srgb,var(--cor-forte) 82%,transparent) 100%),linear-gradient(90deg,rgba(0,0,0,.35),transparent 60%)}
+.heroF .g{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding-top:130px;padding-bottom:28px;gap:clamp(28px,4vw,48px)}
+.heroF .disp{align-self:flex-start;display:inline-flex;align-items:center;gap:9px;padding:8px 14px;border-radius:99px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:auto}
+.heroF .disp i{width:8px;height:8px;border-radius:50%;background:var(--cor-luz);box-shadow:0 0 0 4px color-mix(in srgb,var(--cor-luz) 35%,transparent);animation:pisca 2s infinite}
+@keyframes pisca{50%{opacity:.4}}
+.heroF .linha{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.6fr);gap:clamp(24px,5vw,80px);align-items:end}
+.heroF h1{font-size:clamp(44px,5.8vw,92px);line-height:1;font-weight:300;letter-spacing:-.045em;text-shadow:0 2px 30px rgba(0,0,0,.2)}
+.heroF h1 .l2{display:block;color:var(--claro)}
+.heroF .lado{display:flex;flex-direction:column;gap:20px;padding:22px;border-radius:22px;background:rgba(0,0,0,.26);border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.heroF .sub{color:rgba(255,255,255,.86);font-size:16px}
+.heroF .rodape-h{display:flex;justify-content:space-between;gap:16px;border-top:1px solid rgba(255,255,255,.22);padding-top:16px;font-size:12.5px;color:rgba(255,255,255,.75);letter-spacing:.04em}
+.heroF .rodape-h span{display:inline-flex;align-items:center;gap:7px}
+.heroF .rodape-h svg{width:14px;height:14px}
+@media (max-width:900px){.heroF .linha{grid-template-columns:1fr}.heroF{min-height:auto}.heroF .g{padding-top:150px}}
+@media (max-width:620px){.heroF .rodape-h span:last-child{display:none}}
+</style>
+</head>
+<body>
+{{aviso}}
+{{menu}}
+<main id="inicio">
+<section class="heroF">
+  <img src="{{foto_ambiente:1}}" alt="Foto da {{nome}}">
+  <div class="g">
+    <span class="disp"><i></i>{{horario}}</span>
+    <div class="linha">
+      <h1 data-palavras>{{titulo1}} <span class="l2">{{titulo2}}</span></h1>
+      <div class="lado"><p class="sub">{{subtitulo}}</p><div class="botoes">{{botao_claro}}</div></div>
+    </div>
+    <div class="rodape-h"><span>{{ico_pino}}{{bairro}} · {{cidade}}</span><span>{{prova_clara}}</span><span>{{ico_insta}}{{insta}}</span></div>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>

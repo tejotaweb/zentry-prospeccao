@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="E · Find Your Dream: faixa correndo no topo, foto em cartão com título centralizado e barra de agendamento flutuando na base">
+<meta name="fonte" content="Archivo">
+<meta name="ordem" content="numeros:traco,sobre:foto,servicos:cartoes,galeria,passos,equipe,situacoes,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+h1,h2,h3{letter-spacing:-.04em}
+/* faixa correndo com o aviso do horário */
+.correndo{background:var(--cor);color:var(--sobre);overflow:hidden;font-size:13px;padding-block:8px}
+.correndo .trilho{display:flex;gap:40px;width:max-content;animation:corre 30s linear infinite}
+.correndo span{display:flex;align-items:center;gap:10px;white-space:nowrap;text-transform:uppercase;letter-spacing:.08em}
+.correndo svg{width:15px;height:15px}
+/* ---- abertura E ---- */
+.heroE{padding-inline:clamp(8px,1vw,14px);padding-top:6px;padding-bottom:70px}
+.heroE .cartao{position:relative;border-radius:32px;min-height:min(calc(100vh - 210px),700px);color:#fff;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--tinta)}
+.heroE .cartao .fundo{position:absolute;inset:0;border-radius:inherit;overflow:hidden}
+.heroE .cartao .fundo img{width:100%;height:100%;animation:aproxima 16s ease-out both}
+@keyframes aproxima{from{transform:scale(1.14)}to{transform:scale(1.02)}}
+.heroE .cartao .fundo::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,0,0,.25),rgba(0,0,0,.6)),linear-gradient(180deg,rgba(0,0,0,.2),rgba(0,0,0,.45))}
+.heroE .centro{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;gap:22px;padding:56px var(--x) 120px;max-width:980px}
+.heroE h1{font-size:clamp(40px,5vw,78px);line-height:.98;text-shadow:0 2px 30px rgba(0,0,0,.25)}
+.heroE h1 .l2{display:block;color:rgba(255,255,255,.78)}
+.heroE .sub{font-size:17.5px;color:rgba(255,255,255,.86);max-width:50ch}
+.heroE .selos-h{display:flex;gap:10px;flex-wrap:wrap;justify-content:center}
+.heroE .agenda{position:absolute;z-index:3;left:50%;bottom:0;transform:translate(-50%,50%);width:min(1040px,calc(100% - 2 * var(--x)));background:#fff;color:var(--tinta);border-radius:24px;padding:10px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;gap:6px;box-shadow:0 30px 70px -30px rgba(0,0,0,.45);text-align:left}
+.heroE .campo{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:16px;transition:background .25s}
+.heroE .campo:hover,.heroE .campo:focus-within{background:var(--fundo2)}
+.heroE .campo+.campo{border-left:1px solid var(--linha)}
+.heroE .campo label{display:flex;flex-direction:column;font-size:12px;color:var(--cinza);text-transform:uppercase;letter-spacing:.07em;flex:1;min-width:0}
+.heroE .campo select{all:unset;cursor:pointer;font-size:15.5px;color:var(--tinta);text-transform:none;letter-spacing:0;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;width:100%}
+.heroE .agenda .botao{border-radius:18px;padding:8px 8px 8px 24px;align-self:stretch}
+.heroE .agenda small.nota{position:absolute;left:24px;bottom:-30px;font-size:12.5px;color:var(--cinza);display:flex;gap:6px;align-items:center}
+.heroE .agenda small svg{width:14px;height:14px}
+.numeros-secao.traco .numeros{border-top:0}
+.numeros-secao.traco .numero{border-right:0;position:relative;padding-left:0}
+.numeros-secao.traco .numero::after{content:"";position:absolute;right:12px;top:50%;width:28px;height:1px;background:var(--linha)}
+.numeros-secao.traco .numero:last-child::after{display:none}
+@media (max-width:980px){
+  .heroE .agenda{position:relative;left:auto;transform:none;width:auto;margin:-60px 14px 0;grid-template-columns:1fr}
+  .heroE .campo+.campo{border-left:0;border-top:1px solid var(--linha)}
+  .heroE .agenda small.nota{position:static;padding:6px 10px 2px}
+  .heroE .centro{padding-bottom:100px}
+  .heroE{padding-bottom:20px}
+}
+</style>
+</head>
+<body>
+{{aviso}}
+<div class="correndo" aria-hidden="true"><div class="trilho"><span>{{ico_relogio}}{{horario}}</span><span>{{ico_pino}}{{endereco}}</span><span>{{ico_whats}}Agende pelo WhatsApp</span><span>{{ico_relogio}}{{horario}}</span><span>{{ico_pino}}{{endereco}}</span><span>{{ico_whats}}Agende pelo WhatsApp</span></div></div>
+{{menu}}
+<main id="inicio">
+<section class="heroE">
+  <div class="cartao">
+    <div class="fundo"><img src="{{foto_ambiente:1}}" alt="Foto da {{nome}}"></div>
+    <div class="centro">
+      {{prova_clara}}
+      <h1 data-palavras>{{titulo1}} <span class="l2">{{titulo2}}</span></h1>
+      <p class="sub">{{subtitulo}}</p>
+      <div class="selos-h">{{chips_vidro}}</div>
+    </div>
+    <form class="agenda" data-agenda="{{agenda_destino}}" data-abre="{{abre_whats}}">
+      <div class="campo"><span class="ico-caixa">{{ico_coracao}}</span><label>O que você procura<select name="Atendimento">{{opcoes_servico}}</select></label></div>
+      <div class="campo"><span class="ico-caixa">{{ico_calendario}}</span><label>Melhor dia<select name="Dia">{{opcoes_dia}}</select></label></div>
+      <div class="campo"><span class="ico-caixa">{{ico_relogio}}</span><label>Período<select name="Período"><option>Manhã</option><option>Tarde</option><option>Tanto faz</option></select></label></div>
+      <button class="botao cor" type="submit">Chamar no WhatsApp<span class="seta">{{ico_whats}}</span></button>
+      <small class="nota">{{ico_check}}A mensagem já vai pronta. A equipe confirma o horário com você.</small>
+    </form>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>

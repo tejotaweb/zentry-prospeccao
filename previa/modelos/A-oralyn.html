@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="A · Oralyn: texto à esquerda, foto grande em cartão à direita com retrato e destaque sobrepostos">
+<meta name="fonte" content="Geist">
+<meta name="ordem" content="numeros,servicos:cartoes,sobre:foto,faixa,passos,galeria,equipe,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+/* ---- abertura A ---- */
+.heroA{padding-top:8px}
+.heroA .g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,4vw,64px);min-height:min(calc(100vh - 130px),760px)}
+.heroA .texto{display:flex;flex-direction:column;justify-content:center;gap:22px;padding-block:28px}
+.heroA h1{font-size:clamp(38px,3.9vw,58px)}
+.heroA h1 .cinza{display:block}
+.heroA .sub{font-size:17.5px;color:var(--cinza);max-width:44ch}
+.heroA .rodape-h{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:18px;padding-top:24px;border-top:1px solid var(--linha);font-size:14px}
+.heroA .rodape-h span{display:flex;gap:8px;align-items:center;color:var(--cinza)}
+.heroA .rodape-h svg{width:17px;height:17px;color:var(--cor-forte)}
+.heroA .cartao{position:relative;border-radius:30px;overflow:hidden;min-height:520px;background:var(--claro)}
+.heroA .cartao>img{position:absolute;inset:0;width:100%;height:100%;transform:scale(1.04);animation:aproxima 14s ease-out both}
+@keyframes aproxima{from{transform:scale(1.12)}to{transform:scale(1.02)}}
+.heroA .cartao::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.18),transparent 30%,transparent 55%,rgba(0,0,0,.35))}
+.heroA .contato-pilula{position:absolute;top:18px;right:18px;z-index:2}
+.heroA .selo-giro{position:absolute;top:18px;left:18px;z-index:2;width:96px;height:96px}
+.heroA .selo-giro svg.texto-giro{width:100%;height:100%;animation:gira 18s linear infinite}
+.heroA .selo-giro text{font:500 10.5px/1 var(--fonte);letter-spacing:.24em;text-transform:uppercase;fill:#fff}
+.heroA .selo-giro .miolo{position:absolute;inset:28px;border-radius:50%;background:#fff;display:grid;place-items:center;color:var(--cor-forte)}
+.heroA .selo-giro .miolo svg{width:20px;height:20px}
+@keyframes gira{to{transform:rotate(360deg)}}
+.heroA .sobrepostos{position:absolute;left:18px;right:18px;bottom:18px;z-index:2;display:grid;grid-template-columns:minmax(0,4fr) minmax(0,5fr);gap:12px}
+.heroA .retrato-c{background:#fff;border-radius:20px;padding:10px;display:flex;flex-direction:column;gap:10px;animation:sobe .9s .5s both}
+.heroA .retrato-c img{width:100%;aspect-ratio:4/3;border-radius:14px}
+.heroA .retrato-c b{font-size:14.5px;font-weight:600;padding:0 6px}
+.heroA .retrato-c small{font-size:12px;color:var(--cinza);padding:0 6px 4px;display:block;margin-top:-8px}
+.heroA .destaque{background:color-mix(in srgb,var(--cor) 88%,transparent);color:var(--sobre);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:10px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);animation:sobe .9s .7s both;position:relative;overflow:hidden}
+.heroA .destaque .ico-caixa{background:rgba(255,255,255,.18);color:inherit}
+.heroA .destaque h3{font-size:18px;margin-top:auto}
+.heroA .destaque p{font-size:13.5px;opacity:.85}
+.heroA .destaque .grande{position:absolute;right:-14px;top:-10px;width:120px;height:120px;opacity:.16;stroke-width:1}
+@keyframes sobe{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.numeros-secao.linha .numeros{border-top:0}
+@media (max-width:980px){
+  .heroA .g{grid-template-columns:1fr;min-height:0}
+  .heroA .cartao{min-height:520px}
+  .heroA .texto{padding-block:24px 8px}
+}
+@media (max-width:620px){
+  .heroA .cartao{min-height:500px}
+  .heroA .sobrepostos{grid-template-columns:1fr 1fr;left:10px;right:10px;bottom:10px}
+  .heroA .destaque p{display:none}
+  .heroA .selo-giro{width:78px;height:78px}
+  .heroA .selo-giro .miolo{inset:22px}
+}
+@media (prefers-reduced-motion:reduce){.heroA .cartao>img{transform:none}}
+</style>
+</head>
+<body>
+{{aviso}}
+{{menu}}
+<main id="inicio">
+<section class="heroA">
+  <div class="g">
+    <div class="texto">
+      {{prova}}
+      <h1 data-palavras>{{titulo1}} <span class="cinza">{{titulo2}}</span></h1>
+      <p class="sub">{{subtitulo}}</p>
+      <div class="botoes">{{botao}}{{botao2}}</div>
+      <div class="chips">{{chips}}</div>
+      <div class="rodape-h"><span>{{ico_pino}}{{bairro}}, {{cidade}}</span><span>{{ico_relogio}}{{horario}}</span></div>
+    </div>
+    <div class="cartao" data-inclina>
+      <img src="{{foto_ambiente:1}}" alt="Foto da {{nome}}">
+      <div class="selo-giro" aria-hidden="true">
+        <svg class="texto-giro" viewBox="0 0 100 100"><defs><path id="circ" d="M50 50m-40 0a40 40 0 1 1 80 0a40 40 0 1 1-80 0"/></defs><text><textPath href="#circ">{{bairro}} · {{cidade}} · {{bairro}} · </textPath></text></svg>
+        <span class="miolo">{{ico_coracao}}</span>
+      </div>
+      <a class="botao claro peq contato-pilula" href="#contato">Contato<span class="seta">{{ico_seta}}</span></a>
+      <div class="sobrepostos">
+        <div class="retrato-c"><img src="{{retrato}}" alt="Quem atende"><b>{{profissional}}</b><small>{{profissao}}</small></div>
+        <div class="destaque"><svg class="ico grande" viewBox="0 0 24 24" aria-hidden="true"></svg><span class="ico-caixa">{{servico1_icone}}</span><h3>{{servico1}}</h3><p>{{servico1_texto}}</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Zentry · Entrar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--fundo:#06080d;--cartao:#0d1117;--linha:rgba(255,255,255,.08);--texto:#e8ecf3;--t2:#9aa3b2;--azul:#3b82f6;--erro:#f87171;--ok:#4ade80}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(1200px 600px at 50% -10%,rgba(59,130,246,.16),transparent 60%),var(--fundo);color:var(--texto);font:15px/1.5 Inter,system-ui,sans-serif;padding:24px 16px}
+.caixa{width:100%;max-width:400px}
+.marca{display:flex;align-items:center;gap:12px;margin-bottom:28px}
+.marca i{width:40px;height:40px;border-radius:12px;background:var(--azul);display:grid;place-items:center;font-style:normal;font-weight:600;font-size:18px;color:#fff;box-shadow:0 8px 30px rgba(59,130,246,.35)}
+.marca b{display:block;font-size:17px;font-weight:600}
+.marca small{color:var(--t2);font-size:13px}
+.cartao{background:var(--cartao);border:1px solid var(--linha);border-radius:20px;padding:28px}
+h1{font-size:22px;font-weight:600;letter-spacing:-.02em;margin:0 0 6px}
+p.sub{color:var(--t2);margin:0 0 22px;font-size:14px}
+label{display:block;font-size:13px;color:var(--t2);margin-bottom:14px}
+input{display:block;width:100%;margin-top:7px;padding:12px 14px;border-radius:12px;border:1px solid var(--linha);background:#0a0d13;color:var(--texto);font:inherit;outline:none;transition:border-color .2s}
+input:focus{border-color:var(--azul)}
+.bt{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:6px;padding:13px;border:0;border-radius:12px;background:var(--azul);color:#fff;font:500 15px Inter,sans-serif;cursor:pointer;transition:filter .2s;text-decoration:none}
+.bt:hover{filter:brightness(1.1)}
+.bt:disabled{opacity:.6;cursor:wait}
+.bt.google{background:#fff;color:#1f1f1f;margin:0 0 6px}
+.bt.google svg{width:18px;height:18px}
+.ou{display:flex;align-items:center;gap:12px;color:var(--t2);font-size:12px;margin:16px 0}
+.ou::before,.ou::after{content:"";flex:1;height:1px;background:var(--linha)}
+.msg{font-size:13.5px;min-height:20px;margin:12px 0 0}
+.msg.erro{color:var(--erro)}
+.msg.ok{color:var(--ok)}
+.troca{margin-top:18px;text-align:center;font-size:14px;color:var(--t2)}
+.troca a{color:var(--texto);font-weight:500}
+.rodape{margin-top:18px;text-align:center;font:12px 'Geist Mono',monospace;color:var(--t2);letter-spacing:.02em}
+.espera{text-align:center}
+.espera .sel{width:52px;height:52px;border-radius:50%;margin:0 auto 18px;display:grid;place-items:center;background:rgba(59,130,246,.14);color:var(--azul);font-size:22px}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main class="caixa">
+  <div class="marca"><i>Z</i><span><b>Zentry</b><small>Prospecção de sites</small></span></div>
+  <div class="cartao" id="cartao">
+    <h1 id="titulo">Entrar</h1>
+    <p class="sub" id="sub">Entre com a sua conta.</p>
+    <a class="bt google" id="google" href="/auth/google" hidden><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9.1 3.6l6.8-6.8C35.8 2.4 30.3 0 24 0 14.6 0 6.6 5.4 2.7 13.3l7.9 6.1C12.5 13.6 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.1 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.4c-.5 2.9-2.2 5.3-4.6 7l7.4 5.7c4.3-4 6.9-9.9 6.9-17.2z"/><path fill="#FBBC05" d="M10.6 28.6c-.5-1.4-.8-2.9-.8-4.6s.3-3.2.8-4.6l-7.9-6.1C1 16.6 0 20.2 0 24s1 7.4 2.7 10.7l7.9-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.8-5.8l-7.4-5.7c-2.1 1.4-4.8 2.3-8.4 2.3-6.2 0-11.5-4.1-13.4-9.9l-7.9 6.1C6.6 42.6 14.6 48 24 48z"/></svg><span id="google-txt">Entrar com Google</span></a>
+    <div class="ou" id="ou" hidden>ou com e-mail</div>
+    <form id="f">
+      <label id="l-nome" hidden>Seu nome<input name="nome" autocomplete="name"></label>
+      <label>E-mail<input name="email" type="email" autocomplete="email" required></label>
+      <label>Senha<input name="senha" type="password" autocomplete="current-password" required></label>
+      <label id="l-conf" hidden>Repita a senha<input name="senha2" type="password" autocomplete="new-password"></label>
+      <button class="bt" id="bt">Entrar</button>
+    </form>
+    <p class="msg" id="msg" role="alert"></p>
+    <p class="troca" id="troca"></p>
+  </div>
+  <p class="rodape">Conexão protegida · cada conta é liberada pelo administrador</p>
+</main>
+<script>
+const modo = location.pathname.slice(1) || 'login', q = new URLSearchParams(location.search);
+const $ = (id) => document.getElementById(id), f = $('f'), msg = $('msg'), bt = $('bt');
+const dizer = (t, ok) => { msg.textContent = t; msg.className = 'msg ' + (ok ? 'ok' : 'erro'); };
+const textos = {
+  login: ['Entrar', 'Entre com a sua conta.', 'Entrar', 'Ainda não tem conta? <a href="/cadastro">Criar conta</a>'],
+  cadastro: ['Criar conta', 'Depois de criar, a conta é liberada pelo administrador e você recebe um e-mail.', 'Criar conta', 'Já tem conta? <a href="/login">Entrar</a>'],
+  'criar-senha': ['Conta de administrador', 'Só funciona neste Mac. Esta conta libera as outras. Senha com pelo menos 10 caracteres.', 'Criar e entrar', ''],
+};
+if (modo === 'espera') {
+  $('cartao').innerHTML = '<div class="espera"><div class="sel">✓</div><h1>Acesso liberado</h1><p class="sub">Estamos preparando o seu espaço no Zentry. Você recebe um e-mail assim que ele estiver pronto.</p><button class="bt" onclick="fetch(\'/api/sair\',{method:\'POST\',headers:{\'Content-Type\':\'application/json\'},body:\'{}\'}).then(()=>location.href=\'/login\')">Sair</button></div>';
+} else {
+  const [t, s, b, troca] = textos[modo] || textos.login;
+  $('titulo').textContent = t; $('sub').textContent = s; bt.textContent = b; $('troca').innerHTML = troca;
+  if (modo !== 'login') { $('l-conf').hidden = false; f.senha.autocomplete = 'new-password'; f.senha.minLength = 10; f.senha2.required = true; }
+  if (modo === 'cadastro' || modo === 'criar-senha') $('l-nome').hidden = false;
+  if (modo === 'cadastro') f.nome.required = true;
+  if (modo !== 'criar-senha') fetch('/api/login-opcoes').then((r) => r.json()).then((o) => { if (o.google) { $('google').hidden = false; $('ou').hidden = false; $('google-txt').textContent = modo === 'cadastro' ? 'Criar conta com Google' : 'Entrar com Google'; } }).catch(() => {});
+  if (q.get('aguardando')) dizer('Conta recebida! Ela está aguardando liberação; você recebe um e-mail quando for liberada.', true);
+  if (q.get('erro') === 'google') dizer('Não deu para entrar com o Google. Tente de novo ou use e-mail e senha.');
+}
+f?.addEventListener('submit', async (ev) => {
+  ev.preventDefault();
+  if (modo !== 'login' && f.senha.value !== f.senha2.value) return dizer('As duas senhas não são iguais.');
+  bt.disabled = true; msg.textContent = '';
+  const rota = { login: '/api/login', cadastro: '/api/cadastro', 'criar-senha': '/api/criar-senha' }[modo] || '/api/login';
+  try {
+    const r = await fetch(rota, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nome: f.nome.value, email: f.email.value, senha: f.senha.value }) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.erro || 'Não deu certo.');
+    if (j.aguardando) { f.hidden = true; $('google').hidden = true; $('ou').hidden = true; $('troca').innerHTML = '<a href="/login">Voltar para entrar</a>'; return dizer('Conta criada! Ela está aguardando liberação; você recebe um e-mail quando for liberada.', true); }
+    location.href = '/';
+  } catch (e) { dizer(e.message); bt.disabled = false; }
+});
+</script>
+</body>
+</html>

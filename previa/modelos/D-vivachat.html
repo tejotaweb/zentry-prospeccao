@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="receita" content="D · VivaChat: título à esquerda em 3 linhas e duas colunas desencontradas de fotos altas que se mexem ao rolar">
+<meta name="fonte" content="Plus Jakarta Sans">
+<meta name="ordem" content="faixa,sobre,servicos:lista,numeros,situacoes,passos:escuro,galeria,equipe,duvidas,contato,chamada">
+<title>{{titulo_pagina}}</title>
+{{fontes}}
+<style>{{css}}</style>
+<style>{{tokens}}
+body{background:var(--fundo)}
+/* ---- abertura D ---- */
+.heroD{margin:10px clamp(8px,1vw,14px) 0;border-radius:34px;background:var(--fundo2);overflow:hidden;position:relative}
+.heroD .g{display:grid;grid-template-columns:minmax(0,6fr) 64px minmax(0,5fr);gap:clamp(16px,2.5vw,36px);height:min(calc(100vh - 120px),820px);min-height:640px}
+.heroD .texto{display:flex;flex-direction:column;justify-content:center;gap:26px;padding-block:48px}
+.heroD h1{font-size:clamp(44px,5.6vw,86px);line-height:1;letter-spacing:-.05em}
+.heroD h1 .cinza{display:block}
+.heroD .sub{font-size:16.5px;max-width:44ch}
+.heroD .sub b{font-weight:500}
+.heroD .sub span{color:var(--cinza)}
+.heroD .base{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:28px}
+.heroD .base .chip:nth-child(2){background:var(--claro);color:var(--cor-forte);border-color:transparent}
+.heroD .base a.link{display:flex;gap:8px;align-items:center;text-decoration:none;font-size:14.5px}
+.heroD .base a.link svg{width:16px;height:16px}
+.heroD .trilha{display:flex;flex-direction:column;justify-content:center;align-items:center;gap:14px}
+.heroD .trilha a{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,#fff,var(--claro) 55%,var(--medio));color:var(--cor-forte);box-shadow:0 10px 24px -14px var(--cor);transition:transform .3s}
+.heroD .trilha a:hover{transform:scale(1.08)}
+.heroD .trilha a svg{width:22px;height:22px}
+.heroD .trilha i{width:1px;height:26px;background:var(--medio)}
+.heroD .colunas{display:grid;grid-template-columns:1fr 1fr;gap:14px;overflow:hidden;margin-block:-10px}
+.heroD .coluna{display:flex;flex-direction:column;gap:14px;will-change:transform}
+.heroD .coluna.b{margin-top:-90px}
+.heroD .foto-alta{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:3/4.2;flex:none;background:var(--claro)}
+.heroD .foto-alta img{width:100%;height:100%}
+.heroD .foto-alta .x{position:absolute;top:12px;right:12px;width:38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center}
+.heroD .foto-alta .x svg{width:16px;height:16px}
+.heroD .foto-alta .barra{position:absolute;left:12px;right:12px;bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:10px;padding:6px 6px 6px 18px;border-radius:99px;background:rgba(17,17,17,.82);color:#fff;font-size:13.5px;text-decoration:none;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.heroD .foto-alta .barra span:last-child{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--tinta);display:grid;place-items:center}
+.heroD .foto-alta .barra svg{width:15px;height:15px;transform:rotate(90deg)}
+.heroD .balao{position:absolute;left:12px;right:12px;bottom:12px;display:flex;flex-direction:column;gap:6px}
+.heroD .balao span{align-self:flex-start;display:flex;gap:8px;align-items:center;background:rgba(255,255,255,.9);padding:7px 12px;border-radius:14px 14px 14px 4px;font-size:12.5px;animation:sobeB .8s both}
+.heroD .balao span:nth-child(2){animation-delay:.5s}
+.heroD .balao span:nth-child(3){animation-delay:1s}
+.heroD .balao span svg{width:14px;height:14px;color:var(--cor-forte)}
+@keyframes sobeB{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@media (max-width:980px){
+  .heroD .g{grid-template-columns:1fr;height:auto;min-height:0}
+  .heroD .trilha{flex-direction:row}
+  .heroD .trilha i{width:26px;height:1px}
+  .heroD .colunas{height:520px}
+}
+@media (max-width:620px){
+  .heroD{border-radius:24px}
+  .heroD .colunas{height:440px}
+  .heroD .coluna.b{margin-top:-50px}
+}
+</style>
+</head>
+<body>
+{{aviso}}
+{{menu}}
+<main id="inicio">
+<section class="heroD">
+  <div class="g">
+    <div class="texto">
+      {{prova}}
+      <h1 data-palavras>{{titulo1}} <span class="cinza">{{titulo2}}</span></h1>
+      <p class="sub">{{subtitulo}}</p>
+      <div class="botoes">{{botao}}{{botao2}}</div>
+      <div class="base"><div class="chips">{{chips}}</div></div>
+    </div>
+    <div class="trilha" aria-label="Atalhos">
+      <a href="{{whats_link}}" target="_blank" rel="noopener" aria-label="WhatsApp">{{ico_whats}}</a><i></i>
+      <a href="#servicos" aria-label="Serviços">{{ico_coracao}}</a><i></i>
+      <a href="#contato" aria-label="Endereço">{{ico_pino}}</a>
+    </div>
+    <div class="colunas" aria-hidden="true">
+      <div class="coluna a" data-paralaxe=".06">
+        <div class="foto-alta"><img src="{{foto:1}}" alt=""><span class="x">{{ico_seta}}</span><a class="barra" href="{{whats_link}}" target="_blank" rel="noopener"><span>Fale com a clínica</span><span>{{ico_seta}}</span></a></div>
+        <div class="foto-alta"><img src="{{foto:3}}" alt=""><span class="x">{{ico_seta}}</span></div>
+        <div class="foto-alta"><img src="{{foto:5}}" alt=""></div>
+      </div>
+      <div class="coluna b" data-paralaxe="-.08">
+        <div class="foto-alta"><img src="{{foto:2}}" alt=""><span class="x">{{ico_seta}}</span></div>
+        <div class="foto-alta"><img src="{{retrato}}" alt=""><div class="balao"><span>{{ico_conversa}}Oi! Quero marcar um horário.</span><span>{{ico_calendario}}Qual o melhor dia?</span><span>{{ico_check}}Respondemos no WhatsApp</span></div></div>
+        <div class="foto-alta"><img src="{{foto:4}}" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+{{secoes}}
+</main>
+{{rodape}}
+{{whats_flutuante}}
+<script>{{js}}</script>
+</body>
+</html>
